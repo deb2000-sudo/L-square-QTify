@@ -1,0 +1,33 @@
+.heroContainer{
+    width:100vw;
+    height:270px !important;
+    background-color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textContainer{
+    /* border:1px solid red; */
+    font-size: 32px;
+    color:white;
+    line-height: 48px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.imageContainer{
+    width:212px;
+    height:212px;
+    /* border:1px solid red; */
+    margin-left: 50px;
+    background-size:cover;
+    background-image: url("../../assets/headphone.png");
+    background-repeat: no-repeat;
+
+}
