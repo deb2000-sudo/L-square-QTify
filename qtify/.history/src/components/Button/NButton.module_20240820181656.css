@@ -1,0 +1,17 @@
+
+:root{
+    --color-black:black;
+}
+
+.NButton{
+    background-color: black!important;
+    color:green !important;
+    border-radius: 12px !important;
+    text-transform: none !important;
+    padding:10px 16px 10px 16px !important;
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    line-height: 27px;
+    letter-spacing: 0.25px;
+    text-align: center;
+}

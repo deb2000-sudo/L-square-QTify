@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --color-primary:rgba(52,201,75,1);
+}
+.navbar {
+    background-color: var(--color-primary);
+    height: 74px;
+    width: 100vw;
+    padding: 0px 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  

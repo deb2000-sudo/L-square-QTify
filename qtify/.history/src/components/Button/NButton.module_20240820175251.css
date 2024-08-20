@@ -1,0 +1,8 @@
+
+:root{
+    --color-black:black;
+}
+
+.NButton{
+    background-color: var(--color-black);
+}

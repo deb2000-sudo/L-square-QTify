@@ -1,0 +1,14 @@
+
+:root{
+  --color-primary:rgba(52,201,75,1);
+}
+.navbar {
+    background-color: var(--color-primary);
+    height: 74px;
+    width: 100vw;
+    padding: 2 rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
