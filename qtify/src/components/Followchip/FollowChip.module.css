@@ -1,0 +1,11 @@
+.ChipContainer{
+    background-color: black !important;
+    font-family: 'Poppins' !important;
+    color: white !important;
+    border-radius: 10px !important;
+    height:23px !important;
+    padding: 4px 8px 4px 8 px !important;
+    font-family: 'Poppins' !important;
+    font-size: 10px !important;
+    line-height: 15px !important;
+}

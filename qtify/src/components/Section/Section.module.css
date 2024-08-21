@@ -1,0 +1,20 @@
+.section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black !important;
+    /* border:2px solid red; */
+
+}
+.sectionContainer{
+    position: relative;
+    top: 26px;
+    width: 98%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border:2px solid red; */
+    background-color: black;
+    
+}

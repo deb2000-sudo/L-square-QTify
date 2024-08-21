@@ -1,0 +1,10 @@
+.cardContainer {
+  min-width: 159px;
+  min-height: 205px;
+}
+.cardName {
+  margin-top: 3px !important;
+  /* background-color: yellow !important;
+  border:2px solid red !important */
+  color: white;
+}

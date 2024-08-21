@@ -1,7 +1,9 @@
 // import Header from './components/Header';
 import Navbar from './components/Navbar/Navbar';
 import Herosection from './components/Hero/Herosection';
-import './App.css';
+import MCard from './components/Card/Mcard';
+import Section from './components/Section/Section';
+import Sectionheader from './components/SectionHeader/Sectionheader';
 
 function App() {
   return (
@@ -9,6 +11,10 @@ function App() {
       {/* <Header/> */}
       <Navbar/>
       <Herosection/>
+      <Sectionheader/>
+      <Section/>
+      {/* <Sectionheader/>
+      <Section/> */}
     </div>
   );
 }

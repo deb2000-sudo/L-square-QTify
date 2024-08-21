@@ -1,0 +1,32 @@
+.headerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0) !important;
+    min-height: 60px;
+    /* border:2px solid red;
+    background-color: blue; */
+    position: relative;
+}
+.topAlbumContainer{
+    /* border:2px solid red; */
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    font-family: 'Poppins'!important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: white;
+}
+.headingbtn{
+    font-family: 'Poppins' !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    line-height: 30px !important;
+    color: rgba(52,201,75,1) !important;
+    text-transform: none !important;
+}
