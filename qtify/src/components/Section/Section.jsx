@@ -1,38 +1,11 @@
 import { Grid, Box } from '@mui/material/';
-import Mcard from '../Card/Mcard';
+import Carousel from '../Carousel/Carousel';
 import styles from './Section.module.css';
-const Section = () => {
+const Section = (sectionData) => {
+  console.log(sectionData)
   return (
     <Box className={styles.section}>
-      <Grid container className={styles.sectionContainer} spacing={3}>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-        <Grid item xs={6} md={3} lg={1}>
-          <Mcard />
-        </Grid>
-      </Grid>
+      <Carousel carouselData={sectionData}/>
     </Box>
   );
 };

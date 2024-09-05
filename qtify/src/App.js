@@ -4,17 +4,17 @@ import Herosection from './components/Hero/Herosection';
 import MCard from './components/Card/Mcard';
 import Section from './components/Section/Section';
 import Sectionheader from './components/SectionHeader/Sectionheader';
+import Topalbum from './components/TopAlbum/Topalbum';
+import Newalbum from './components/NewAlbum/Newalbum';
+import "./App.css"
 
 function App() {
   return (
     <div className="App">
-      {/* <Header/> */}
       <Navbar/>
       <Herosection/>
-      <Sectionheader/>
-      <Section/>
-      {/* <Sectionheader/>
-      <Section/> */}
+      <Topalbum/>
+      <Newalbum/>
     </div>
   );
 }

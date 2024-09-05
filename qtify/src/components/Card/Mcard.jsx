@@ -7,7 +7,9 @@ import styles from './Mcard.module.css';
 import cardImage from '../../assets/albumImg.png';
 import { CardActions } from '@mui/material';
 
-const Mcard = () => {
+const Mcard = ({cardData}) => {
+  // console.log(cardData["follows"],typeof(cardData["follows"]));
+  const followData=cardData["follows"];
   return (
     <div className={styles.cardContainer}>
       <Card>
@@ -15,17 +17,17 @@ const Mcard = () => {
           <CardMedia
             component="img"
             height="170"
-            image={cardImage}
-            alt="card-image"
+            image={cardData["image"]}
+            alt={cardData["slug"]}
           />
         </CardActionArea>
         <CardActions>
-          <FollowChip />
+          <FollowChip followdata={followData}/>
         </CardActions>
       </Card>
       <div className={styles.cardName}>
         <Typography variant="body2"  >
-          New Bollywood
+          {cardData["title"]}
         </Typography>
       </div>
     </div>

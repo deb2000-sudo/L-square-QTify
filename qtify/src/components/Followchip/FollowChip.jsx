@@ -1,9 +1,10 @@
 import Chip from '@mui/material/Chip';
 import styles from './FollowChip.module.css';
 
-const FollowChip=()=>{
+const FollowChip=({followdata})=>{
+    console.log(followdata)
     return(
-        <Chip label="100 Follows" className={styles.ChipContainer}/>
+        <Chip label={`${followdata} Follows`} className={styles.ChipContainer}/>
     )
 };
 
