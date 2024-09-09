@@ -4,7 +4,6 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import FollowChip from '../Followchip/FollowChip';
 import styles from './Mcard.module.css';
-import cardImage from '../../assets/albumImg.png';
 import { CardActions } from '@mui/material';
 
 const Mcard = ({cardData}) => {

@@ -12,28 +12,3 @@ swiper-slide {
   position: relative;
   flex-direction: column;
 }
-.navBtn {
-  display: block;
-  position: absolute;
-  z-index: 20;
-  user-select: none;
-  -webkit-user-select: none;
-  background-color: rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  padding: 2px;
-  border-radius: 5px;
-  transition: background 0.5s ease;
-}
-.navBtn:hover {
-  background-color: green;
-}
-/* make this global */
-:global(.customPrevButton) {
-  top: 32%;
-  left: -1.5rem;
-}
-
-:global(.customNextButton) {
-  top: 32%;
-  right: -1.5rem;
-}
