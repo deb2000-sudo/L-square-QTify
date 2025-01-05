@@ -6,6 +6,7 @@ import Section from './components/Section/Section';
 import Sectionheader from './components/SectionHeader/Sectionheader';
 import Topalbum from './components/TopAlbum/Topalbum';
 import Newalbum from './components/NewAlbum/Newalbum';
+import FaqSection from './components/FaqSection/FaqSection';
 import "./App.css"
 import SongsSection from './components/Songs/SongsSection';
 
@@ -17,6 +18,7 @@ function App() {
       <Topalbum/>
       <Newalbum/>
       <SongsSection/>
+      <FaqSection/>
     </div>
   );
 }

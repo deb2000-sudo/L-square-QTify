@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sectionheader from '../SectionHeader/Sectionheader';
 import Section from '../Section/Section';
-
+import { Box, CircularProgress } from '@mui/material';
+import './SongsSection.css';
 const SongsSection = () => {
   const API_ENDPOINT = 'https://qtify-backend-labs.crio.do/songs';
 
@@ -11,7 +12,7 @@ const SongsSection = () => {
 
   useEffect(() => {
     const onLoadHandler = async () => {
-      const allsongdata = await performApiCall();
+      await performApiCall();
     };
     onLoadHandler();
   }, []);
@@ -34,9 +35,18 @@ const SongsSection = () => {
       <Sectionheader sectionName={'Songs'} />
       {/* Conditional rendering for Section component */}
       {allSongsLoader ? (
-        <p>Loading...</p> // Show a loader or loading text
+        <Box className="loading">
+          <CircularProgress sx={{ color: '#34C94B' }} />
+          <p class="loadingText">Loading...</p>
+        </Box>
       ) : (
-        allSongs && <Section topalbums={allSongs} /> // Render only if topalbums has data
+        <>
+          {allSongs ? (
+            <Section sectionData={allSongs} />
+          ) : (
+            <p>No Songs Available</p>
+          )}
+        </>
       )}
     </div>
   );

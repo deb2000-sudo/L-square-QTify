@@ -1,14 +1,6 @@
-swiper-container {
-  /* background-color: brown; */
-  width: 95vw;
-  height: 232px;
-  line-height: 200px;
-}
-swiper-slide {
-  color: #fff;
-  font-size: 25px;
-}
 .carouselContainer {
-  position: relative;
-  flex-direction: column;
+  width:100%;
+  position:relative;
+  /* border:2px solid red; */
+  
 }

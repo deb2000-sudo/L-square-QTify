@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import Sectionheader from '../SectionHeader/Sectionheader';
 import Section from '../Section/Section';
-
+import {Box, CircularProgress} from '@mui/material'
+import './Newalbum.css'
 const Newalbum = () => {
   const API_ENDPOINT = 'https://qtify-backend-labs.crio.do/albums/new';
   //useEffect is used to fetch the data
@@ -12,7 +13,7 @@ const Newalbum = () => {
 
   useEffect(() => {
     const onLoadHandler = async () => {
-      const newalbumData = await performApiCall();
+      await performApiCall();
     };
     onLoadHandler();
   }, []);
@@ -32,9 +33,18 @@ const Newalbum = () => {
     <div>
         <Sectionheader sectionName={"New Albums"}/>
         {newAlbumLoader ? (
-        <p>Loading...</p> // Show a loader or loading text
+          <Box className="loading">
+            <CircularProgress sx={{color:"#34C94B"}}/>
+            <p className='loadingText'>Loading...</p>
+          </Box>
       ) : (
-        newalbums && <Section topalbums={newalbums} /> // Render only if newpalbums has data
+        <>
+          {newalbums ? (
+            <Section sectionData={newalbums}/>
+          ) : (
+            <p>No  new Albums Available</p>
+          )}
+        </>
       )}
     </div>
   )
