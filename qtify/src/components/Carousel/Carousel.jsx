@@ -6,7 +6,7 @@ import 'swiper/css'; // Swiper's CSS
 import styles from './Carousel.module.css';
 
 const Carousel = ({ CarouselData,IsAlbum }) => {
-  console.log(CarouselData)
+  //console.log(CarouselData)
   const swiperRef = useRef(null); //reference of swiper instance
   return (
     <div

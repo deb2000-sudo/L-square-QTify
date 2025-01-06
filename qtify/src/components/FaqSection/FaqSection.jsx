@@ -18,7 +18,7 @@ const FaqSection = () => {
     };
     onLoadHandler();
   }, []);
-  console.log(Faqs);
+  //console.log(Faqs);
 
   const performApiCall = async () => {
     setFaqsLoader(true);

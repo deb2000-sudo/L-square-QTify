@@ -28,7 +28,7 @@ const SongsSection = () => {
       console.error('error in fetching data', error);
     }
   };
-  console.log(allSongs);
+  //console.log(allSongs);
 
   return (
     <div>
