@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import SongTabs from '../Songstabs/SongTabs';
 import Sectionheader from '../SectionHeader/Sectionheader';
-import Section from '../Section/Section';
 import { Box, CircularProgress } from '@mui/material';
 import './SongsSection.css';
 const SongsSection = () => {
@@ -42,7 +42,8 @@ const SongsSection = () => {
       ) : (
         <>
           {allSongs ? (
-            <Section sectionData={allSongs} />
+            <SongTabs allsongsData={allSongs} IsAlbum={false}/>
+            // <Section sectionData={allSongs} />
           ) : (
             <p>No Songs Available</p>
           )}

@@ -40,7 +40,7 @@ const Newalbum = () => {
       ) : (
         <>
           {newalbums ? (
-            <Section sectionData={newalbums}/>
+            <Section sectionData={newalbums} IsAlbum={true}/>
           ) : (
             <p>No  new Albums Available</p>
           )}

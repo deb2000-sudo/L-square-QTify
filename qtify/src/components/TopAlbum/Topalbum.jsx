@@ -43,7 +43,7 @@ const Topalbum = () => {
       ) : (
         <>
           {topalbums ? (
-            <Section sectionData={topalbums} />
+            <Section sectionData={topalbums} IsAlbum={true} />
           ) : (
             <p>No Albums Available</p>
           )}
